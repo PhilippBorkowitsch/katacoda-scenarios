@@ -1,6 +1,7 @@
 # Star Schema
 
-In a complex data system, it is often times difficult to keep the tables normalized and ensure simple querying.
-While denormalizing the data, the Star Schema can help to simplify querying.
+In den üblichen Data Warehouse Architekturen bildet der Data Mart Layer die Schnittstelle zu den Benutzern der gesammelten Daten. Die Daten verlassen hier das Warehouse und werden für eine Analyse oder andere Anwendungen verwendet. Um einen möglichst guten Zugriff auf die Daten zu ermöglichen, sollten Queries einfach und schnell möglich sein.
 
-This scenario explains how to achieve a Star Schema and shows its pros and cons.
+Ein Weg, um komplexe Daten in einfach verständliche Formen zu bringen, ist der Einsatz eines Dimensionalen Modells wie das Star Schema. Dabei wird auf die Normalisierung der Tabellen verzichtet, um eine einfachere Struktur mit wenigen Joins zu erhalten. Dadurch mag es zu einem erhöhten Bedarf an Speicherplatz kommen, der durch schnelle Abfragen ausgeglichen wird.
+
+Im Folgenden soll das Szenario erklären, wie ein Star Schema zu erreichen ist, und die Vor- und Nachteile aufzeigen.
