@@ -10,7 +10,7 @@ Dabei sind in Dimension-Tabellen Dinge und Entitäten gespeichert, die durch die
 
 Für die Wahl der Primary Keys der Dimension-Tabellen empfiehlt Adamson (2006) die Erstellung neuer Surrogate Keys, um die alten Identifikationsnummern als Attribute der Dimension-Tabellen beizubehalten. 
 
-Seinen Namen erhält das Star Schema durch die sternförmige Anordnung der Tabellen in einer graphischen Darstellung von Star Schema Datenbanken, da meist eine einzige Fact-Tabelle im Mittelpunkt steht, die zu allen Dimension-Tabellen verbunden ist.
+Seinen Namen erhält das Star Schema durch die sternförmige Anordnung der Tabellen in einer graphischen Darstellung von Star Schema Datenbanken, da meist eine einzige Fact-Tabelle im Mittelpunkt steht, die mit allen Dimension-Tabellen verbunden ist.
 
 
 
