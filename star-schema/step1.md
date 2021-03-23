@@ -1,4 +1,6 @@
-Um das Star Schema zu demonstrieren soll die folgende zu vereinfachende Architektur als ein Beispiel dienen:
+# Erstellen der gewöhnlichen Architektur
+
+Um das Star Schema zu demonstrieren soll die folgende, zu vereinfachende Architektur als ein Beispiel dienen:
 
 ![image](./assets/normal_model.png)
 
@@ -6,6 +8,4 @@ In dieser Architektur liegne alle Tabellen in der 3. Normalform vor. Die Tabelle
 
 Das SQL Script `structural_model.sql` liefert eine Umsetzung der Tabellen in PostgreSQL.
 
-Der Befehl `psql -f structural_model.sql`{{execute}} erstellt die Tabellen.
-
-Nachdem die Konsole der Datenbank mit `psql`{{execute}} aufgerufen wurde, 
+Der Befehl `psql -f structural_model.sql`{{execute}} erstellt die Tabellen und füllt sie mit generierten Beispieldaten.
