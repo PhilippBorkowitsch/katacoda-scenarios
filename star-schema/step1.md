@@ -1,13 +1,19 @@
 # Erstellen der gewöhnlichen Architektur
 
-Um das Star Schema zu demonstrieren soll die folgende, zu vereinfachende Architektur als ein Beispiel dienen:
+## Beispielarchitektur
+
+Um das Star Schema zu demonstrieren soll die folgende, zu vereinfachende Architektur der Datenbank eines Fahrzeugverkaufs als ein Beispiel dienen:
 
 ![image](./assets/normal_model.png)
 
-In dieser Architektur liegne alle Tabellen in der 3. Normalform vor. Die Tabelle `Personen` wird sowohl für Kaufende und Verkaufende verwendet und ist durch zwei Verbindungstabellen mit den verkauften Fahrzeugen verbunden.
+Hier werden die verkauften Fahrzeuge, ihre Käufer und Verkäufer, sowie ihr Produktionswerk gespeichert.
 
-Das SQL Script `structural_model.sql` liefert eine Umsetzung der Tabellen in PostgreSQL.
+Die Tabellen liegen in der 3. Normalform vor. Eine Besonderheit ist, dass die Tabelle `Personen` sowohl für Kaufende und Verkaufende verwendet wird. Sie ist daher durch zwei Verbindungstabellen mit den verkauften Fahrzeugen verbunden.
+
+## Erstellen der Beispielarchitektur
+
+Im rechten Terminal wird ein Container geöffnet, in dem die Datenbank PostgreSQL installiert ist. Der Container enthält des weiteren ein Script, das eine Umsetzung der Tabellen ermöglicht, sowie einen Ordner mit generierten Beispieldaten.
 
 Mit dem Befehl `psql -f structural_model.sql`{{execute}} werden die Tabellen angelegt und mit Beispieldaten aus dem `/mock_data` Verzeichnis gefüllt.
 
-Anschließend kann mit `psql`{{execute}} die Kommandozeile der Datenbank aufgerufen werden, und mit `\d` überprüft werden, ob die Tabellen erstellt wurden.
+Mit `psql`{{execute}} kann anschließend die Kommandozeile der Datenbank aufgerufen werden, um mit `\d` zu überprüfen, ob die Tabellen erstellt wurden.

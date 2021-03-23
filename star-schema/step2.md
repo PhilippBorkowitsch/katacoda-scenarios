@@ -39,4 +39,4 @@ INNER JOIN Sales_Persons s ON s.vehicle_identifier = v.vehicle_identifier
 INNER JOIN Persons sa ON sa.userid = s.userid;
 ``` {{execute}}
 
-Da 
+Bereits diese Standard-Query ist lang und durch die benötigten Joins unübersichtlich.
