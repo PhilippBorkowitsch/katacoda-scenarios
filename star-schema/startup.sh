@@ -1,3 +1,4 @@
 #!/bin/bash
 
-docker run -dp 5342:5432 -it pbork/katacoda-starschema -e POSTGRES_PASSWORD=test123 
+docker run -d -p 5342:5432 -e POSTGRES_PASSWORD=test123 --name katacoda-starschema pbork/katacoda-starschema
+docker exec -it katacoda-starschema bash
