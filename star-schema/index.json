@@ -19,7 +19,8 @@
             }
         ],
         "intro": {
-            "text": "intro.md"
+            "text": "intro.md",
+            "foreground": "startup.sh" 
         },
         "finish": {
             "text": "finish.md"

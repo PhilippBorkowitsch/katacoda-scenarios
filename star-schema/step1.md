@@ -1,4 +1,7 @@
-Um das Star Schema zu demonstrieren soll die folgende herkömmliche Architektur als ein Beispiel dienen:
+Um das Star Schema zu demonstrieren soll die folgende zu vereinfachende Architektur als ein Beispiel dienen:
 
 ![image](./assets/normal_model.png)
+
+In dieser Architektur liegne alle Tabellen in der 3. Normalform vor. Die Tabelle Personen wird sowohl für Käufer und Verkäufer verwendet und ist mit zwei Verbindungstabellen mit den verkauften Fahrzeugen verbunden.
+
 
