@@ -6,4 +6,4 @@ In dieser Architektur liegne alle Tabellen in der 3. Normalform vor. Die Tabelle
 
 Das SQL Script `structural_model.sql` liefert eine Umsetzung der Tabellen in PostgreSQL. 
 
-Mit dem Befehl `nano structural_model.sql` kann der Inhalt angezeigt werden.
+Mit dem Befehl `nano structural_model.sql`{{execute}} kann der Inhalt angezeigt werden.
