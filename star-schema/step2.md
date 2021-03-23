@@ -1,6 +1,6 @@
 # Nachteile der herkömmlichen Architektur
 
-Um eine vollständige Abfrage eines verkauften Fahrzeuges zu erhalten, muss im herkömmlichen Modell eine komplizierte Query erstellt werden:
+Um eine vollständige Abfrage aller verkauften Fahrzeuges zu erhalten, muss im zuletzt generierten Modell die folgende Query aufgerufen werden:
 
 ``` 
 SELECT 
@@ -39,3 +39,4 @@ INNER JOIN Sales_Persons s ON s.vehicle_identifier = v.vehicle_identifier
 INNER JOIN Persons sa ON sa.userid = s.userid;
 ``` {{execute}}
 
+Da 
