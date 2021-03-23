@@ -4,4 +4,6 @@ Um das Star Schema zu demonstrieren soll die folgende zu vereinfachende Architek
 
 In dieser Architektur liegne alle Tabellen in der 3. Normalform vor. Die Tabelle Personen wird sowohl für Käufer und Verkäufer verwendet und ist mit zwei Verbindungstabellen mit den verkauften Fahrzeugen verbunden.
 
-Das SQL Script `structural_model.sql`{{open}} liefert eine Umsetzung der Tabellen in PostgreSQL. 
+Das SQL Script `structural_model.sql` liefert eine Umsetzung der Tabellen in PostgreSQL. 
+
+Mit dem Befehl `nano structural_model.sql` kann der Inhalt angezeigt werden.
