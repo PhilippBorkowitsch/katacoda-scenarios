@@ -6,16 +6,24 @@
     "details": {
         "steps": [
             {
-                "title": "Step 1",
+                "title": "Beispielarchitektur",
                 "text": "step1.md"
             },
             {
-                "title": "Step 2",
+                "title": "Verwendung der Beispielarchitektur",
                 "text": "step2.md"
             },
             {
-                "title": "Step 3",
+                "title": "Einführung Star Schema",
                 "text": "step3.md"
+            },
+            {
+                "title": "Umgestaltung des Beispiels",
+                "text": "step4.md"
+            },
+            {
+                "title": "Verwendung des Star Schemas",
+                "text": "step5.md"
             }
         ],
         "intro": {

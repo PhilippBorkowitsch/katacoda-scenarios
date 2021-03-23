@@ -1,4 +1,4 @@
-# Nachteile der herkömmlichen Architektur
+# Query über sämtliche Reihen
 
 Um eine vollständige Abfrage aller verkauften Fahrzeuges zu erhalten, muss im zuletzt generierten Modell die folgende Query aufgerufen werden:
 

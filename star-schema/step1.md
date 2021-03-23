@@ -1,6 +1,4 @@
-# Erstellen der gewöhnlichen Architektur
-
-## Beispielarchitektur
+## Vorstellung
 
 Um das Star Schema zu demonstrieren soll die folgende, zu vereinfachende Architektur der Datenbank eines Fahrzeugverkaufs als ein Beispiel dienen:
 
@@ -16,4 +14,4 @@ Im rechten Terminal wird ein Container geöffnet, in dem die Datenbank PostgreSQ
 
 Mit dem Befehl `psql -f structural_model.sql`{{execute}} werden die Tabellen angelegt und mit Beispieldaten aus dem `/mock_data` Verzeichnis gefüllt.
 
-Mit `psql`{{execute}} kann anschließend die Kommandozeile der Datenbank aufgerufen werden, um mit `\d` zu überprüfen, ob die Tabellen erstellt wurden.
+Mit `psql`{{execute}} kann anschließend die Kommandozeile der Datenbank aufgerufen werden, um mit `\d`{{execute}} zu überprüfen, ob die Tabellen erstellt wurden.
