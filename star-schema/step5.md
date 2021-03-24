@@ -12,7 +12,7 @@ INSERT INTO D_Persons (
     gender,
     comment
 )
-SELECT (
+SELECT 
     userid,
     lastname,
     firstname,
@@ -20,47 +20,47 @@ SELECT (
     birthday,
     gender,
     comment
-) FROM Persons;
+FROM Persons;
 
 INSERT INTO D_Vehicles (
     vehicle_identifier,
     model
-) SELECT (
+) SELECT 
     vehicle_identifier,
     model
-) FROM Vehicles;
+FROM Vehicles;
 
 INSERT INTO D_Production_Plants (
     plantname,
     country
-) SELECT (
+) SELECT 
     plantname,
     country
-) FROM Production_plants;
+FROM Production_plants;
 
-INSERT INTO D_Time (
+INSERT INTO D_Times (
     date,
     day,
     month,
     year
-) SELECT (
+) SELECT
     sales_date,
     EXTRACT(DAY FROM sales_date),
     EXTRACT(MONTH FROM sales_date),
     EXTRACT(YEAR FROM sales_date)
-) FROM Vehicles;
+FROM Vehicles;
 
-INSERT INTO D_Time (
+INSERT INTO D_Times (
     date,
     day,
     month,
     year
-) SELECT (
+) SELECT
     production_date,
     EXTRACT(DAY FROM sales_date),
     EXTRACT(MONTH FROM sales_date),
     EXTRACT(YEAR FROM sales_date)
-) FROM Vehicles;
+FROM Vehicles;
 
 INSERT INTO F_Sales (
     timeid_sales,
@@ -71,7 +71,7 @@ INSERT INTO F_Sales (
     plantid,
     sales_price,
     discount
-) SELECT (
+) SELECT
     sales_date.timeid,
     prod_date.timeid,
     veh.vehicleid,
@@ -80,13 +80,15 @@ INSERT INTO F_Sales (
     pp.plantid,
     v.sales_price,
     v.discount
-) FROM Vehicles v
+FROM Vehicles v
 INNER JOIN D_Times sales_date ON sales_date.date = v.sales_date
 INNER JOIN D_Times prod_date ON prod_date.date = v.production_date
-INNER JOIN Vehicles veh ON veh.vehicle_identifier = v.vehicle_identifier
+INNER JOIN D_Vehicles veh ON veh.vehicle_identifier = v.vehicle_identifier
 INNER JOIN Owners o ON o.vehicle_identifier = v.vehicle_identifier
-INNER JOIN Persons own ON own.userid = o.userid
+INNER JOIN D_Persons own ON own.userid = o.userid
 INNER JOIN Sales_Persons s ON s.vehicle_identifier = v.vehicle_identifier
-INNER JOIN Persons sal ON sal.userid = s.userid
-INNER JOIN Production_plants pp ON pp.plantid = v.manufacturer;
+INNER JOIN D_Persons sal ON sal.userid = s.userid
+INNER JOIN D_Production_plants pp ON pp.plantid = v.manufacturer;
 ```{{execute}}
+
+Dabei ist zu beachten, dass die Fact-Tabelle die Surrogate Keys aus den neu angelegten Dimension-Tabellen benötigt, um diese miteinander zu verbinden, weshalb im letzten Befehl Joins zwischen der alten `Vehicles` Tabelle und den neuen Tabellen hergestellt werden.
