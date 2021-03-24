@@ -10,7 +10,7 @@ INNER JOIN D_Persons sal ON sal.personid = f.personid_sales
 INNER JOIN D_Production_Plants pp ON pp.plantid = f.plantid;
 ```{{execute}}
 
-Nicht nur der benötigte Code ist kürzer, auch die Verarbeitungsdauer ist deutlich geringer. Mit dem `EXPLAIN` Schlüsselwort können die Transaktionskosten in PostgreSQL angezeigt werden:
+Nicht nur der benötigte Code ist kürzer, auch die Verarbeitungsdauer ist geringer. Mit dem `EXPLAIN` Schlüsselwort können die Transaktionskosten in PostgreSQL angezeigt werden:
 
 
 ``` 
@@ -59,3 +59,7 @@ INNER JOIN D_Persons own ON own.personid = f.personid_owner
 INNER JOIN D_Persons sal ON sal.personid = f.personid_sales
 INNER JOIN D_Production_Plants pp ON pp.plantid = f.plantid;
 ```{{execute}}
+
+Dabei ist der Unterschied zwar wegen der vergleichsweise kleinen Datenmenge gering, würde sich im Big Data Bereich jedoch deutlich ausweiten.
+
+TODO: NACHTEILE ZEIGEN

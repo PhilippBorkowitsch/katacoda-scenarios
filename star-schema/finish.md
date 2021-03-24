@@ -1,3 +1,9 @@
+# Schluss
+
+Dieses Szenario hat gezeigt, wie ein herkömmliches Modell ins Star Schema übersetzt werden kann. Dabei wurde auf die allgemeine Definition des Star Schemas eingegangen und die Vor- und Nachteile der Verwendung am Beispiel gezeigt.
+
+Das Star Schema ist das meistgenutzte Schema im Data Mart Layer der Data Warehouses und konnte sich auch gegen aufkommende multidimensionelle Modelle durchsetzen. Daher bleibt es ein wichtiges Werkzeug in der Gestaltung eines Data Warehouses.
+
 # Quellen
 
 - Adamson, C. (2006). Mastering Data Warehouse Aggregates. Solutions for Star Schema Performance. Indianapolis: Wiley Publishing Inc.
