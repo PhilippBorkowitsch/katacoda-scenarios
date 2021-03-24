@@ -4,7 +4,7 @@ Wendet man das Star Schema auf das bisherige Beispiel an, könnte man die Fahrze
 
 Die folgende Abbildung zeigt den Aufbau der Beispieldatenbank unter Berücksichtigung des Star Schemas.
 
-![Star Schema Model](./assets/star_schema.PNG)
+![Star Schema Model](./assets/star_schema.png)
 
 Wie zu sehen ist, wurde durch die Remodellierung die maximale Join-Tiefe von 2 auf 1 gesenkt, da jede Dimension-Tabelle direkt mit der Fact-Tabelle verbunden ist. Bei größeren Tabellen mit einer höheren ursprünglichen Join-Tiefe ist dieser Unterschied natürlich markanter als bei dem Beispiel.
 
