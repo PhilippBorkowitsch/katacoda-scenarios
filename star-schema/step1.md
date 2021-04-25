@@ -1,12 +1,12 @@
 ## Vorstellung
 
-Um das Star Schema zu demonstrieren soll die folgende, zu vereinfachende Architektur der Datenbank eines Fahrzeugverkaufs als ein Beispiel dienen:
+Um das Star Schema zu demonstrieren soll zuerst eine herkömmliche Datenbank eines Fahrzeugverkaufs als ein Beispiel dienen, die nachfolgend in das Star Schema gebracht werden soll:
 
 ![image](./assets/normal_model.png)
 
 Hier werden die verkauften Fahrzeuge, ihre Käufer und Verkäufer, sowie ihr Produktionswerk gespeichert.
 
-Die Tabellen liegen in der 3. Normalform vor. Eine Besonderheit ist, dass die Tabelle `Personen` sowohl für Kaufende und Verkaufende verwendet wird. Sie ist daher durch zwei Verbindungstabellen mit den verkauften Fahrzeugen verbunden.
+Die Tabellen wurden konzeptionell modelliert. Eine Besonderheit ist, dass die Tabelle `Personen` sowohl für Kaufende und Verkaufende verwendet wird. Sie ist daher durch zwei Verbindungstabellen mit den verkauften Fahrzeugen verbunden.
 
 ## Erstellen der Beispielarchitektur
 
