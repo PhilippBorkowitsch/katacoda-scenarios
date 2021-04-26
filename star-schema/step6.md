@@ -62,4 +62,4 @@ INNER JOIN D_Production_Plants pp ON pp.plantid = f.plantid;
 
 Dabei ist der Unterschied zwar wegen der vergleichsweise kleinen Datenmenge gering, würde sich im Big Data Bereich jedoch deutlich ausweiten.
 
-TODO: NACHTEILE ZEIGEN
+Der größte Nachteil des Star Schemas ist, dass durch die Denormalisierung Daten eventuell mehrfach gespeichert werden. Die Simplifikation und Verschnellerung der Queries wird mit dem Preis von Ineffizienzen in der Datenspeicherng bezahlt. 

@@ -1,6 +1,6 @@
 ## Vorstellung
 
-Um das Star Schema zu demonstrieren soll zuerst eine herkömmliche Datenbank eines Fahrzeugverkaufs als ein Beispiel dienen, die nachfolgend in das Star Schema gebracht werden soll:
+Um das Star Schema zu demonstrieren, soll zuerst eine herkömmliche Datenbank eines Fahrzeugverkaufs als ein Beispiel dienen, die nachfolgend in das Star Schema gebracht wird:
 
 ![image](./assets/normal_model.png)
 
